@@ -41,8 +41,6 @@ def normalize_text(s, sep_token=" \n "):
     s = s.strip()
     return s
 
-# Example file path to analyze
-file_path = "document_example/Azure_whats_new.pdf"
 
 def analyze_document(client: DocumentAnalysisClient, model_id: str, file_path: str) -> None:
     try:
